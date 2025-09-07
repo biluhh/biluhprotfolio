@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none ;
+    color: rgb(223, 251, 131);
+    
+    scroll-behavior: smooth;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root{
+    --background:rgb(9, 54, 63);
+    --second-background:rgb(9, 54, 63);
+    --back-a: linear-gradient( #000000,#000000ed,#000000); 
+}
+body{
+    min-height: 100vh;
+    /* background-color:  var(--background); */
+    background: var(--back-a);
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2em 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background-color:rgb(231, 241, 155) ; 
+    z-index: 1000;
+
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+nav ul a{
+    color:rgb(0, 0, 0);
+    
+    transition: 0.2s ease-in-out;
+    
+font-size: medium;
+}
+nav ul a:hover{
+    
+}
+.name{font-size: 2em;
+color: rgb(0, 0, 0);
+font-weight: 600;
+
+transition: 0.2s ease-in-out;
+text-align: center;
+margin-left:-210px;
+
+
+}
+.name:hover{
+    
+}
+.btn{
+    padding: 0.5em 1em;
+    color:black ;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background-color: white;
+
+
+
+}
+.btn:hover{
+    background-color:black;
+    color: white;
+}
+section{
+    min-height: 100vh;
+    padding: -5% 15%;
+
+}
+#home{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    color: white;
+}
+#home img{
+    width:400px;
+    
+    border-radius: 50%;
+     
+    margin-top: 8em;
+    margin-left: 650px;
+    height: 410px;
+    box-shadow: 0 0 40PX rgb(223, 6, 6);
+    
+}
+.home img .sss{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid black;
+    border-bottom: .2rem solid  black;
+    border-left: .2rem solid yellow;
+    border-right: .2rem solid yellow ;
+    animation: rotateAnimation 6s linear infinite;
+}
+@keyframes rotateAnimation{
+    20%{
+        transform: translate(-50%, -50%)rotate(360deg);
+    }
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.7em;
+    max-width: 600px;
+    margin-right: 600px;
+    margin-top: -400px;
+}
+.info-box h1{
+    font-size: 3em;
+    font-weight: 00;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.info-box h3{
+    font-size:2em ;
+    font-weight: 4000;
+
+}
+.btn-box{
+    display: flex;
+    gap: 1em;
+    margin-right: 600px;
+    margin-top: 100px;
+}
+#menu{
+    color: white; 
+}
+#about img{
+
+ width:30vw;
+    border-radius: 10%;
+    margin-top: 8em;
+    height: 600px;
+    
+}
+.about-info{
+margin-top:10px ;
+
+}
+.boss{
+margin-top: 10px;
+margin-right: 750px;
+display: flex;
+gap: 40px;
+font-size: 40px;
+margin-left: 150px;
+
+}
+.about div{
+  display: flex;
+  border-radius: 100%;
+}
+.heading{
+    text-align: center;
+    position: relative;
+    margin:
+}
+
+#imm img{
+     width:300px;
+     height: 300px;
+    /* object-fit: cover; */
+    border-radius:50%;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 40PX rgb(243, 46, 46);
+
+     
+    /* margin-top: 8em; */
+    /* margin-left: 250px; */
+    /* height: 410px; */
+}
+.iti{
+display: flex;
+position: relative;
+top: 50px;
+
+justify-content: center;
+align-items: center;
+margin-left: 100px;
+margin-right: 100px;
+
+
+
+}
+#imm {
+    
+    margin-left: 610px;
+}
+.skill{
+    padding-top: 200px;
+}
+
+.skill-container{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 40px;
+    
+    
+}
+.skill-container .card{
+
+border: 2px solid rgb(0, 0, 0);
+flex:1 1 20rem;
+padding: 3rem 2rem 4rem;
+background-color: rgb(0, 0, 0);
+border-radius: 10px;
+text-align: center;
+position: relative;
+box-shadow:0 0 40PX rgb(226, 18, 18);
+
+
+}
+
+
+
+.card{
+    /* width: 40px; */
+}
+.baby{
+width: 500PX;
+height: -10px;
+
+
+
+}
+.skill-container .card:hover{
+    background-color: rgb(5, 76, 61);
+
+border: 4px solid  rgb(73, 36, 64);
+
+box-shadow: 
+
+
+}
+/* #picture{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    margin-left: 200px;
+}
+
+  #boss{
+ width: 300px;
+    height: 200px;
+    display: flex;
+    margin-left: 200px;
+
+}
+.project big{
+
+    display: flex;
+    margin-left: 700px;
+    margin-bottom: 00px; */
+
+
+
+
+.project{
+     background: var(--image-b);
+}
+
+.project-container{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.project-container .p1{
+     flex: 1 1 30rem;
+    background: var(--second-bg-color); 
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--main-color); 
+    position: relative; 
+
+    
+}
+.project-container h3{
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+.project-container p{
+    font-size: 1.4rem;
+}
+
+#image1{
+    width: 40rem;
+    height: 25rem;
+    border-radius: 1rem;
+    border: 2px solid var(--card-bg-color);
+    box-shadow:0 0 40PX rgb(226, 18, 18);
+}
+#image2{
+    width: 39rem;
+    height: 25rem;
+    border-radius: 1rem;
+    border: 2px solid var(--card-bg-color);
+    box-shadow:0 0 40PX rgb(226, 18, 18);
+}
+.project-container .p1:hover{
+    border: 4px solid var(--bg-color);
+    border-radius: 30px;
+}
+
+
+
+.contact{
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: var(--back-a);
+}
+.contact form{
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.contact form .input{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input .input-field{
+    position: relative;
+    width: 49%;
+    margin: 0rem 0;
+}
+.contact form .input .input-field input
+{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 1rem;
+}
+
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 1rem;
+    
+}
+.contact form .textarea-field{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+.contact form .textarea-field{
+    resize: none;
+}
